@@ -1,0 +1,29 @@
+body{
+  font-family: workSansRegular;
+  letter-spacing: -1pt;
+}
+
+h1{
+  font-family: workSansBold;
+  text-align: center;
+  font-size: 32pt;
+  margin-top: 32pt;
+  margin-bottom: 24pt;
+}
+
+h2{
+  font-family: workSansBold;
+  text-align: left;
+  font-size: 16pt;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+}
+
+.clearfix{
+  margin-bottom: 8pt;
+}
+
+::selection {
+  color: white;
+  background: black;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+  <link href="styles/fonts.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="styles/form.css" rel="stylesheet">
+  <link href="styles/dropdown.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-1">
+        <form>
+          <h1>Registration</h1>
+
+          <h2>Login info</h2>
+
+          <div class="input-container">
+            <label>Email</label>
+            <input type="text" placeholder="Enter your email" required>
+            <label class="error">Email is not valid</label>
+          </div>
+
+          <div class="input-container">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+            <div class="password-validation">
+              <div id="password-character-count-circle" class="circle"></div>
+              <div id="password-character-count-text">More than 8 characters</div>
+            </div>
+            <div class="password-validation">
+              <div id="password-include-special-characters-circle" class="circle"></div>
+              <div id="password-include-special-characters-text">Include special characters</div>
+            </div>
+          </div>
+
+          <h2>Personal info</h2>
+
+          <div class="input-container">
+            <label>Your name</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label class="error">Name can not be empty</label>
+          </div>
+
+          <div class="input-container">
+            <label>Country</label>
+            <div class="dropdown">
+              <input type="text" placeholder="Enter to search">
+              <span class="material-icons">expand_more</span>
+            </div>
+            <div id="country-dropdown" class="dropdown-options dropdown-collapsed"></div>
+            <label class="error">Please choose your country</label>
+          </div>
+
+          <div class="input-container">
+            <label>Phone number</label>
+            <input type="tel" placeholder="__ ___ ____" required>
+            <label class="error">Phone number is not valid</label>
+          </div>
+
+          <div class="input-container">
+            <label>Birth date</label>
+            <input type="date" placeholder="DD / MM / YYY" required>
+            <label class="error">Birth date is not valid</label>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="input-container checkbox">
+            <input id="privacy-policy-checkbox" type="checkbox" required>
+            <label for="privacy-policy-checkbox">I accept the <a href="privacy_policy.html">privacy policy</a></label>
+          </div>
+
+          <div class="input-container checkbox">
+            <input id="sign-up-checkbox" type="checkbox">
+            <label for="sign-up-checkbox">Sign me up for newsletter</label>
+          </div>
+
+          <button type="submit">Register</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="scripts/dropdown.js"></script>
+
+</body>
+</html>
